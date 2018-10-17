@@ -1,0 +1,29 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Learn React - Video 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://unpkg.com/react@16.0.0-rc.3/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.0.0-rc.3/umd/react-dom.development.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+<script type="text/javascript">
+const rootElement = document.getElementById('root');
+// const element = document.createElement('div');
+// element.textContext = 'Hello World';
+// element.className = 'container';
+// rootElement.appendChild(element);
+const element = React.createElement('div', {
+    className: 'container', 
+    children: 'Hello World'
+  }
+    // We can pass more props here as children
+);
+ReactDOM.render(element, rootElement);
+</script>
+</body>
+</html>
