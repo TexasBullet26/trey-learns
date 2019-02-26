@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 15,
-    "editor.fontFamily": "'Source Code Pro'",
+    "editor.fontSize": 14,
+    "editor.fontFamily": "'Fira Code', 'Source Code Pro'",
     "editor.fontWeight": "300"
 }
