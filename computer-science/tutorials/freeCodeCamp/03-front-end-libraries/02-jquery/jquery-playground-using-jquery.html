@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>jQuery Playground</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <script>
+            // Lesson 1:
+            $(document).ready(function() {
+                // Lesson 2:
+                $('button').addClass('animated bounce');
+            });
+        </script>
+        <div class="container-fluid">
+            <h3 class="text-primary text-center">jQuery Playground</h3>
+            <!--create an inline bootstrap row-->
+            <div class="row">
+                <!--create a column that takes up half the space on xs devices-->
+                <div class="col-xs-6">
+                    <!--for the sake of clarity, label both well with their ids-->
+                    <h4>#left-well</h4>
+                    <!--create a bootstrap well-->
+                    <div class="well" id="left-well">
+                        <!--create id so jQuery can target each button by its unique id-->
+                        <button class="btn btn-default target" id="target1">#target1</button>
+                        <button class="btn btn-default target" id="target2">#target2</button>
+                        <button class="btn btn-default target" id="target3">#target3</button>
+                    </div>
+                </div>
+                <!--create a column that takes up half the space on xs devices-->
+                <div class="col-xs-6">
+                    <!--for the sake of clarity, label both well with their ids-->
+                    <h4>#right-well</h4>
+                    <!--create a bootstrap well-->
+                    <div class="well" id="right-well">
+                        <!--create id so jQuery can target each button by its unique id-->
+                        <button class="btn btn-default target" id="target4">#target4</button>
+                        <button class="btn btn-default target" id="target5">#target5</button>
+                        <button class="btn btn-default target" id="target6">#target6</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
