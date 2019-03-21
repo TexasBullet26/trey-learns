@@ -1,5 +1,18 @@
 {
-    "editor.fontSize": 14,
-    "editor.fontFamily": "'Fira Code', 'Source Code Pro'",
-    "editor.fontWeight": "300"
+    "workbench.colorCustomizations": {
+        "[Cobalt Next]": {
+            "editorCursor.foreground": "#ffffffa4"
+        }
+    },
+    "bracketPairColorizer.showVerticalScopeLine": true,
+    "bracketPairColorizer.highlightActiveScope": true,
+    "bracketPairColorizer.showHorizontalScopeLine": true,
+    "editor.fontSize": 15,
+    "editor.letterSpacing": 0.2,
+    "editor.lineHeight": 22,
+    "editor.fontFamily": "'Fira Code Light', 'Source Code Pro'",
+    "editor.fontWeight": "200",
+    "files.autoSave": "off",
+    "python.pythonPath": "C:\\Python27\\python.exe",
+    "python.sortImports.args": ["pythoncom", "pyHook", "win32clipboard"]
 }
