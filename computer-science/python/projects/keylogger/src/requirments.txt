@@ -1,0 +1,4 @@
+ctypes
+pythoncom
+pyHook
+win32clipboard
