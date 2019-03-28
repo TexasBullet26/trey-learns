@@ -1,4 +1,5 @@
-@-ms-viewport, @viewport {
+@ms-viewport,
+@viewport {
     orientation: landscape;
     zoom: 1;
     min-zoom: 1;
@@ -11,13 +12,16 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     -moz-user-select: none;
     -webkit-user-select: none;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     overflow: hidden;
