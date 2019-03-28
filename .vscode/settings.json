@@ -7,12 +7,13 @@
     "bracketPairColorizer.showVerticalScopeLine": true,
     "bracketPairColorizer.highlightActiveScope": true,
     "bracketPairColorizer.showHorizontalScopeLine": true,
-    "editor.fontSize": 15,
+    "editor.fontSize": 13,
     "editor.letterSpacing": 0.2,
     "editor.lineHeight": 22,
-    "editor.fontFamily": "'Fira Code Light', 'Source Code Pro'",
-    "editor.fontWeight": "200",
+    "editor.fontFamily": "'Source Code Pro', 'Fira Code Light', 'Source Code Pro'",
+    "editor.fontWeight": "300",
     "files.autoSave": "off",
     "python.pythonPath": "C:\\Python27\\python.exe",
-    "python.sortImports.args": ["pythoncom", "pyHook", "win32clipboard"]
+    "python.sortImports.args": ["pythoncom", "pyHook", "win32clipboard"],
+    "tslint.enable": false
 }
