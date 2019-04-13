@@ -1,0 +1,50 @@
+<!-- This is a template that defines how the RentalListing component will look. -->
+
+<!--*************************************************************
+*  Our new RentalListing component will manage how a user sees  *
+*  and interacts with a rental. To start, we moved the rental   *
+*  display details for a single rental from the rentals.hbs     *
+*  template into rental-listing.hbs and added the image field.  *
+***************************************************************** -->
+<article class="listing">
+  <!--****************************************************************
+  *  02.06 Building a Simple Component: Hiding and Showing an Image  *
+  *******************************************************************************************************
+  *  Use the {{if}} helper to show our current rental image larger only                                 *
+  *  when isWide is set to true, by setting the element class name to wide.                             *
+  *  Add some text to indicate that the image can be clicked on, and wrap both                          *
+  *  with an anchor element, giving it the image class name so that our test can find it.               *
+  *  The value of isWide comes from our component's JavaScript file, app/components/rental-listing.js.  *
+  ******************************************************************************************************* -->
+  <!--***************************************************************************************************
+  *  When we click the anchor element, Ember will go into the actions hash and call                     *
+  *  the toggleImageSize function. An actions hash is an object in the component                        *
+  *  that contains functions. These functions are called when the user interacts with the UI.           *
+  *  So, when we click the image or the View Larger link in our browser, we see                         *
+  *  our image shown larger. When we click the enlarged image we again see it smaller.                  *
+  ******************************************************************************************************* -->
+  <a onclick={{action "toggleImageSize"}} class="image {{if this.isWide "wide"}}" role="button">
+    <img src={{this.rental.image}} alt="">
+    <small>View Larger</small>
+  </a>
+  <div class="details">
+    <h3>{{this.rental.title}}</h3>
+    <div class="detail owner">
+      <span>Owner:</span> {{this.rental.owner}}
+    </div>
+    <div class="detail type">
+      <!--************************************************************************
+      *  02.07: Creating a Handlebars Helper                                     *
+      *    Update our `rental-listing` component template to use our new helper  *
+      *    and pass in `rental.category.                                         *
+      **************************************************************************** -->
+      <span>Type:</span> {{rental-property-type this.rental.category}} - {{this.rental.category}}
+    </div>
+    <div class="detail location">
+      <span>Location:</span> {{this.rental.city}}
+    </div>
+    <div class="detail bedrooms">
+      <span>Number of bedrooms:</span> {{this.rental.bedrooms}}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,53 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcome!</h2>
+  <p>
+    We hope you find exactly what you're looking for in a place to stay.
+  </p>
+  {{#link-to "about" class="button"}}
+    About Us
+  {{/link-to}}
+</div>
+
+<!--
+  ******************************************************************************
+  *  02.09: Creating a Complex Component - Providing Markup to a Component     *
+  ******************************************************************************
+  *  We "wrap" our rentals markup inside the open and closing mentions of      *
+  *  `ListFilter`. This is an example of the block form of a component,        *
+  *  which allows a Handlebars template to be rendered inside the component's  *
+  *  template wherever the `{{yield}}` expression appears.                     *
+  *  In this case we are passing, or "yielding", our filter data to the inner  *
+  *  markup as a variable called `filteredResults`.                            *
+  ******************************************************************************
+-->
+<ListFilter @filter={{action "filterByCity"}} as |filteredResults|>
+  <ul class="results">
+    <!--
+      *********************************************************************
+      *  The `{{each}}` helper will let us loop through each of           *
+      *  the rental objects in our model.                                 *
+      *********************************************************************
+      *  For each rentalUnit in the model list, we are creating a new     *
+      *  instance of our RentalListing component and passing in the       *
+      *  rentalUnit by assigning it to the component's rental attribute.  *
+      *  Each rental item will now have its own image.                    *
+      *********************************************************************
+    -->
+    {{#each filteredResults as |rentalUnit|}}
+      <li>
+        <RentalListing @rental={{rentalUnit}} />
+      </li>
+    {{/each}}
+    <!--
+      **************************************************************************
+      *  In this template, we loop through each object. On each iteration,     *
+      *  the current object gets stored in a variable called rentalUnit. From  *
+      *  the rentalUnit variable in each step, we create a listing with info   *
+      *  about the property.                                                   *
+      **************************************************************************
+    -->
+  </ul>
+</ListFilter>
+
+{{outlet}}
