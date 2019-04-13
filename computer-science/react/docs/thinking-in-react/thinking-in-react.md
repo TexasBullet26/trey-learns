@@ -163,3 +163,31 @@ You can build top-down or bottom-up. That is, you can either start with building
 At the end of this step, you’ll have a library of reusable components that render your data model. The components will only have `render()` methods since this is a static version of your app. The component at the top of the hierarchy (`FilterableProductTable`) will take your data model as a prop. If you make a change to your underlying data model and call `ReactDOM.render()` again, the UI will be updated. It’s easy to see how your UI is updated and where to make changes since there’s nothing complicated going on. React’s **one-way data flow** (also called _one-way binding_) keeps everything modular and fast.
 
 Simply refer to the [React docs](https://reactjs.org/docs/) if you need help executing this step.
+
+## A Brief Interlude: Props vs State
+
+There are two types of "model" data in React: props and state. It's important to understand the distinction between the two; skim [the official React docs](https://reactjs.org/docs/interactivity-and-dynamic-uis.html) if you aren't sure what the difference is.
+
+## Step 3: Identify the Minimal (but complete) Representation of UI State
+
+To make your UI interactive, you need to be able to trigger changes to your underlying data model. React makes this easy with **state**.
+
+To build your app correctly, you first need to think of the minimal set of mutable state that your app needs. The key here is [DRY: _Don't Repeat Yourself_](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). Figure out the absolute minimal representation of the state your application needs and compute everything else you need on-demand. For example, if you're building a TODO list, just keep an array of the TODO items around; don't keep a separate state variable for the count. Instead, when you want to render the TODO count, simply take the length of the TODO items array.
+
+Think of all of the pieces of data in our example application. We have:
+
+-   The original list of products
+
+-   The search text the user has entered
+
+-   The value of the checkbox
+
+-   The filtered list of products
+
+Let's go through each one and figure out which one is state. Simply ask three questions about each piece of data:
+
+1. Is it passed in from a parent via props? If so, it probably isn't state
+
+2. Does it remain unchanged over time? If so, it probably isn't state
+
+3. Can you compute it based on any other state or props in your component? If so, it isn't state
