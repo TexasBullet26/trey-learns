@@ -1,0 +1,3 @@
+[submodule "computer-science/javascript/react/react-redux-app"]
+	path = computer-science/javascript/react/react-redux-app
+	url = git@github.com:kentcdodds/learn-react.git
