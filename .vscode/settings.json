@@ -1,21 +1,16 @@
 {
     //------------------------- A -------------------------//
-
     //------------------------- B -------------------------//
-
     //-- BRACKET PAIR COLORIZER --//
     "bracketPairColorizer.showVerticalScopeLine": true,
     "bracketPairColorizer.highlightActiveScope": true,
     "bracketPairColorizer.showHorizontalScopeLine": true,
-
     //------------------------- C -------------------------//
-
     //------------------------- D -------------------------//
-
+    "dart.sdkPath": "C:\\tools\\dart-sdk\\bin",
     //------------------------- E -------------------------//
-
     //-- EDITOR --//
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "editor.lineHeight": 0,
     "editor.fontFamily": "'Fira Code Light', 'Source Code Pro'",
     "editor.fontWeight": "200",
@@ -31,13 +26,10 @@
         //"types": "#f66",
         //"variables": "#FF0000",
     },
-
     //-- EMMET --//
     "emmet.showSuggestionsAsSnippets": true,
-
     //-- EXPLORER --//
     "explorer.openEditors.visible": 3,
-
     //-- EXTENSIONS --//
     "extensions.ignoreRecommendations": true,
     "[python]": {
@@ -46,126 +38,106 @@
             120
         ]
     },
-
     //------------------------- F -------------------------//
-
     //-- FILES --//
     "files.autoSave": "off",
-
     //------------------------- G -------------------------//
-
     //-- GIT --//
     "git.autoStash": true,
     "git.enableSmartCommit": true,
-
     //-- GIT HISTORY --//
     "gitHistory.hideCommitViewExplorer": true,
-
     //-- GO --//
     "go.autocompleteUnimportedPackages": true,
-
+    "go.formatTool": "gofmt",
+    "go.lintTool": "gometalinter",
+    "go.lintOnSave": "file",
+    "go.useLanguageServer": true,
+    "go.buildOnSave": "package",
+    "go.languageServerExperimentalFeatures": {
+        "format": true,
+        "autoComplete": true,
+        "rename": true,
+        "goToDefinition": true,
+        "hover": true,
+        "signatureHelp": true,
+        "goToTypeDefinition": true,
+        "goToImplementation": true,
+        "documentSymbols": true,
+        "workspaceSymbols": true,
+        "findReferences": true
+    },
     //-- GUIDES --//
     "guides.active.width": 1,
     "guides.sendUsagesAndStats": false,
-
     //------------------------- H -------------------------//
-
     //-- HTML --//
     "html.format.indentHandlebars": true,
     "html-css-class-completion.enableEmmetSupport": true,
-
     //------------------------- I -------------------------//
-
     //------------------------- J -------------------------//
-
     //-- JAVA --//
     "java.home": "C:\\Program Files\\Java\\jdk1.8.0_131",
-
     //-- JAVASCRIPT --//
     "javascript.preferences.quoteStyle": "single",
-
     //------------------------- K -------------------------//
-
     //------------------------- L -------------------------//
-
     //-- LIVESERVER --//
     "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --headless --remote-debugging-port=9222 C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe --private-window",
-
     //------------------------- M -------------------------//
-
     //------------------------- N -------------------------//
-
     //-- NPM --//
     "npm.enableScriptExplorer": true,
-
     //-- NPM-INTELLISENSE --//
     "npm-intellisense.packageSubfoldersIntellisense": true,
     "npm-intellisense.scanDevDependencies": true,
     "npm-intellisense.showBuildInLibs": true,
-
     //------------------------- O -------------------------//
-
     //------------------------- P -------------------------//
-
     //-- PATH-INTELLISENSE --//
     "path-intellisense.showHiddenFiles": true,
-
     //-- PHP --//
     "php.validate.executablePath": "E:\\xampp\\php\\php.exe",
     "php.executablePath": "E:\\xampp\\php\\php.exe",
-
     //-- PRETTIER --//
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
-
     //-- PYTHON --//
     "python.pythonPath": "C:\\Python27\\python.exe",
-    "python.sortImports.args": ["pythoncom", "pyHook", "win32clipboard"],
-
+    "python.sortImports.args": [
+        "pythoncom",
+        "pyHook",
+        "win32clipboard"
+    ],
     //------------------------- Q -------------------------//
-
     //-- QUOKKA --//
     "quokka.suppressExpirationNotifications": true,
-
     //------------------------- R -------------------------//
-
     //-- RUBY --//
     "ruby.codeCompletion": "rcodetools",
     "ruby.format": "rubocop",
     "ruby.interpreter.commandPath": "../../../../../mnt/../treylanz/.rvm/rubies/ruby-2.5.0/bin/ruby",
     "ruby.useBundler": true,
     "ruby.useLanguageServer": true,
-
     //-- RUST --//
     "rust-client.rustupPath": "../../../../../mnt/../treylanz/.cargo/bin/rustup",
     "rust-client.useWSL": true,
     "rust.all_features": true,
-
     //------------------------- S -------------------------//
-
     //-- SCSS --//
     "scss.showErrors": true,
-
     //-- SOLARGRAPH (RUBY) --//
     "solargraph.formatting": true,
-
     //------------------------- T -------------------------//
-
     //-- TSLINT --//
     "tslint.enable": false,
-
     //-- TYPESCRIPT --//
     "typescript.preferences.quoteStyle": "single",
-
     //------------------------- U -------------------------//
-
     //------------------------- V -------------------------//
-
     //------------------------- W -------------------------//
-
     //-- WINDOW --//
     "window.zoomLevel": -1,
-
     //-- WORKBENCH --//
     "workbench.editor.showTabs": true,
     "workbench.editor.openPositioning": "last",
@@ -187,11 +159,7 @@
             "activityBarBadge.background": "#536888b9"
         },
     },
-
     //------------------------- X -------------------------//
-
     //------------------------- Y -------------------------//
-
     //------------------------- Z -------------------------//
-
 }
