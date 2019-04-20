@@ -7,16 +7,20 @@
   "author": "Glenn Lanzer III",
   "scripts": {
     "start": "node ./app.js",
-    "start:dev": "node set DEBUG=server:* & npm start",
-    "dev": "nodemon ./app.js"
+    "dev": "nodemon ./app.js",
+    "debug": "node set DEBUG=server:* & npm start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stop": "lsof -ti :3000 | xargs kill"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/TexasBullet26/realworld-fullstack-app-node-api.git"
   },
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "cookie-parser": "~1.4.3",
+    "cors": "^2.7.1",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "morgan": "~1.9.0"
