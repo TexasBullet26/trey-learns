@@ -1,3 +1,6 @@
 [submodule "computer-science/javascript/react/react-redux-app"]
 	path = computer-science/javascript/react/react-redux-app
 	url = git@github.com:kentcdodds/learn-react.git
+[submodule "computer-science/projects/realworld-fullstack-app/vendor/bootstrap-template"]
+	path = computer-science/projects/realworld-fullstack-app/vendor/bootstrap-template
+	url = https://github.com/TexasBullet26/realworld-fullstack-app-bootstrap-template.git
