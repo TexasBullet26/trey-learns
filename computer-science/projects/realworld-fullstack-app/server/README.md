@@ -65,7 +65,7 @@ This `server` directory is where we build the backend in Node.js. Once the backe
 
 - `app.js` - The entry point to our application. This file defines our express server and connects it to MongoDB using mongoose. It also requires the routes and models we'll be using in the application
 - `config/` - This directory contains configuration for passport as well as a central location for configuration/environment variables
-- `routes/` - This directory contains the route definitions for our API. They contain
+- `routes/` - This directory contains the route definitions for our API.
 - `models/` - This directory contains the schema definitions for our Mongoose models
 
 ### Error Handling
