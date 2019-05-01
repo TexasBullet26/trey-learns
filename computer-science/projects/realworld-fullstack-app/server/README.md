@@ -41,7 +41,7 @@ To get the Node server running locally:
 - Run MongoDB by executing `mongod`
 - `npm run dev` to start the local dev server
 
-Alternately, to quickly try out this repo in the cloud, navigate to this [glitch](http://glitch.com/edit/#!/realworld) and remix your own version by following the README instructions there.
+Alternately, to quickly try out this repo in the cloud, you can [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/realworld)
 
 We are using Node as an API. To do this, we set up [Express](https://expressjs.com/) for server logic and will be using MongoDB for the database (which is a popular choice in the Node community, as MongoDB [stores data in the JSON format](https://www.mongodb.com/json-and-bson))
 
