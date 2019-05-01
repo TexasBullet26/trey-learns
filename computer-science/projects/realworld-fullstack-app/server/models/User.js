@@ -12,7 +12,7 @@ var UserSchema = new mongoose.Schema(
             unique: true,
             required: [true, "can't be blank"],
             match: [/\S+@\S+\.\S+/, 'is invalid'],
-            index: true,
+            index: true
         },
         email: {
             type: String,
@@ -20,14 +20,14 @@ var UserSchema = new mongoose.Schema(
             unique: true,
             required: [true, "can't be blank"],
             match: [/\S+@\S+\.\S+/, 'is invalid'],
-            index: true,
+            index: true
         },
         bio: String,
         image: String,
         favorites: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Article' }],
         following: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
         hash: String,
-        salt: String,
+        salt: String
     },
     { timestamps: true }
 );
@@ -54,7 +54,7 @@ UserSchema.methods.generateJWT = function() {
         {
             id: this._id,
             username: this.username,
-            exp: parseInt(exp.getTime() / 1000),
+            exp: parseInt(exp.getTime() / 1000)
         },
         secret
     );
@@ -64,7 +64,7 @@ UserSchema.methods.toAuthJSON = function() {
     return {
         username: this.username,
         email: this.email,
-        token: this.generateJWT(),
+        token: this.generateJWT()
     };
 };
 
@@ -77,6 +77,7 @@ UserSchema.methods.toProfileJSONFor = function(user) {
     };
 };
 
+// Favorite an article:
 UserSchema.methods.favorite = function(id) {
     if (this.favorites.indexOf(id) === -1) {
         this.favorites.push(id);
@@ -85,6 +86,7 @@ UserSchema.methods.favorite = function(id) {
     return this.save();
 };
 
+// Unfavorite an article:
 UserSchema.methods.unfavorite = function(id) {
     this.favorites.remove(id);
     return this.save();
@@ -96,14 +98,16 @@ UserSchema.methods.isFavorite = function(id) {
     });
 };
 
+// Check if user is already following another user:
 UserSchema.methods.follow = function(id) {
-    if (this.favorites.indexOf(id) === -1) {
+    if (this.following.indexOf(id) === -1) {
         this.following.push(id);
     }
 
     return this.save();
 };
 
+// Unfollow a user:
 UserSchema.methods.unfollow = function(id) {
     this.following.remove(id);
     return this.save();
