@@ -1,5 +1,4 @@
-var fs = require('fs'),
-    http = require('http'),
+var http = require('http'),
     path = require('path'),
     methods = require('methods'),
     express = require('express'),
@@ -74,10 +73,12 @@ if (!isProduction) {
 
         res.status(err.status || 500);
 
-        res.json({'errors': {
-            message: err.message,
-            error: err
-        }});
+        res.json({
+            errors: {
+                message: err.message,
+                error: err
+            }
+        });
     });
 }
 
@@ -85,14 +86,16 @@ if (!isProduction) {
 // no stacktraces leaked to user:
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.json({'errors': {
-        message: err.message,
-        error: {}
-    }});
+    res.json({
+        errors: {
+            message: err.message,
+            error: {}
+        }
+    });
 });
 
 // let's start our server...
-var server = app.listen( process.env.PORT || 3000, function() {
+var server = app.listen(process.env.PORT || 3000, function() {
     console.log('Listening on port ' + server.address().port);
 });
 
