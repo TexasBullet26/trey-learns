@@ -6,11 +6,13 @@
   "private": true,
   "author": "Glenn Lanzer III",
   "scripts": {
+    "mongo:start": "docker run --name realworld-mongo -p 27017:27017 mongo & sleep 5",
     "start": "node ./app.js",
     "dev": "nodemon ./app.js",
     "debug": "node set DEBUG=server:* & npm start",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "stop": "lsof -ti :3000 | xargs kill"
+    "test": "newman run ./tests/api-tests.postman.json -e ./tests/env-api-tests.postman.json",
+    "stop": "lsof -ti :3000 | xargs kill",
+    "mongo:stop": "docker stop realworld-mongo && docker rm realworld-mongo"
   },
   "repository": {
     "type": "git",
