@@ -2,21 +2,30 @@
     //------------------------- A -------------------------//
     //------------------------- B -------------------------//
     //-- BRACKET PAIR COLORIZER --//
-    "bracketPairColorizer.showVerticalScopeLine": true,
-    "bracketPairColorizer.highlightActiveScope": true,
-    "bracketPairColorizer.showHorizontalScopeLine": true,
+    /*"bracket-pair-colorizer-2.colors": [
+        "Red",
+        "Orange",
+        "Yellow",
+        "LightSkyBlue"
+    ],*/
+    //"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+    //"bracket-pair-colorizer-2.colorMode": "Consecutive",
+    //"bracketPairColorizer.showVerticalScopeLine": true,
+    //"bracketPairColorizer.highlightActiveScope": true,
+    //"bracketPairColorizer.showHorizontalScopeLine": true,
     //------------------------- C -------------------------//
     //------------------------- D -------------------------//
     // "dart.sdkPath": "C:\\tools\\dart-sdk\\bin",
     //------------------------- E -------------------------//
     //-- EDITOR --//
     "editor.fontSize": 14,
-    "editor.lineHeight": 20,
-    //"editor.letterSpacing": 0.23,
+    "editor.lineHeight": 28,
+    "editor.letterSpacing": 0.5,
     "editor.fontFamily": "'Fira Code Light', 'Source Code Pro'",
     "editor.fontWeight": "200",
     "editor.minimap.enabled": false,
     "editor.minimap.showSlider": "mouseover",
+    "editor.renderWhitespace": "all",
     // "editor.letterSpacing": 0.25,
     //"editor.tokenColorCustomizations": {
     //"comments": "#c4c0d693",
@@ -69,9 +78,22 @@
         "findReferences": true
     },
     //-- GUIDES --//
-    "guides.active.width": 1,
+    //"guides.active.enabled": true,
+    //"guides.active.width": 1,
     "guides.sendUsagesAndStats": false,
     //------------------------- H -------------------------//
+    //-- HIGHLIGHT MATCHING TAG --//
+    //"highlight-matching-tag.enabled": true,
+    /*"highlight-matching-tag.styles": {
+        "opening": {
+            "left": {
+                "underline": "yellow"
+            },
+            "right": {
+                "underline": "yellow"
+            }
+        }
+    },*/
     //-- HTML --//
     "html.format.indentHandlebars": true,
     "html-css-class-completion.enableEmmetSupport": true,
@@ -135,6 +157,23 @@
     //"scss.showErrors": true,
     //-- SOLARGRAPH (RUBY) --//
     //"solargraph.formatting": true,
+    //-- SUBTLE MATCH BRACKETS --//
+    //"subtleBrackets.disableNative": true,
+    //"subtleBrackets.parse": true,
+    /*"subtleBrackets.pairs": [
+        {
+            "open": "(",
+            "close": ")"
+        },
+        {
+            "open": "[",
+            "close": "]"
+        },
+        {
+            "open": "{",
+            "close": "}"
+        }
+    ],*/
     //------------------------- T -------------------------//
     //-- TSLINT --//
     //"tslint.enable": false,
@@ -166,6 +205,7 @@
             "activityBarBadge.background": "#536888b9"
         },
     },
+    "vsicons.presets.angular": true,
     //------------------------- X -------------------------//
     //------------------------- Y -------------------------//
     //------------------------- Z -------------------------//
