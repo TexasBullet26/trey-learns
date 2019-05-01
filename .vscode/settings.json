@@ -2,34 +2,44 @@
     //------------------------- A -------------------------//
     //------------------------- B -------------------------//
     //-- BRACKET PAIR COLORIZER --//
-    "bracketPairColorizer.showVerticalScopeLine": true,
-    "bracketPairColorizer.highlightActiveScope": true,
-    "bracketPairColorizer.showHorizontalScopeLine": true,
+    /*"bracket-pair-colorizer-2.colors": [
+        "Red",
+        "Orange",
+        "Yellow",
+        "LightSkyBlue"
+    ],*/
+    //"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+    //"bracket-pair-colorizer-2.colorMode": "Consecutive",
+    //"bracketPairColorizer.showVerticalScopeLine": true,
+    //"bracketPairColorizer.highlightActiveScope": true,
+    //"bracketPairColorizer.showHorizontalScopeLine": true,
     //------------------------- C -------------------------//
     //------------------------- D -------------------------//
-    "dart.sdkPath": "C:\\tools\\dart-sdk\\bin",
+    // "dart.sdkPath": "C:\\tools\\dart-sdk\\bin",
     //------------------------- E -------------------------//
     //-- EDITOR --//
-    "editor.fontSize": 13,
-    "editor.lineHeight": 0,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 28,
+    "editor.letterSpacing": 0.5,
     "editor.fontFamily": "'Fira Code Light', 'Source Code Pro'",
     "editor.fontWeight": "200",
     "editor.minimap.enabled": false,
     "editor.minimap.showSlider": "mouseover",
+    "editor.renderWhitespace": "all",
     // "editor.letterSpacing": 0.25,
-    "editor.tokenColorCustomizations": {
-        //"comments": "#c4c0d693",
-        //"functions": "#FF0000",
-        //"keywords": "#FF0000",
-        //"numbers": "#FF0000",
-        //"strings": "#FF0000",
-        //"types": "#f66",
-        //"variables": "#FF0000",
-    },
+    //"editor.tokenColorCustomizations": {
+    //"comments": "#c4c0d693",
+    //"functions": "#FF0000",
+    //"keywords": "#FF0000",
+    //"numbers": "#FF0000",
+    //"strings": "#FF0000",
+    //"types": "#f66",
+    //"variables": "#FF0000",
+    //},
     //-- EMMET --//
-    "emmet.showSuggestionsAsSnippets": true,
+    //"emmet.showSuggestionsAsSnippets": true,
     //-- EXPLORER --//
-    "explorer.openEditors.visible": 3,
+    //"explorer.openEditors.visible": 3,
     //-- EXTENSIONS --//
     "extensions.ignoreRecommendations": true,
     "[python]": {
@@ -68,16 +78,29 @@
         "findReferences": true
     },
     //-- GUIDES --//
-    "guides.active.width": 1,
+    //"guides.active.enabled": true,
+    //"guides.active.width": 1,
     "guides.sendUsagesAndStats": false,
     //------------------------- H -------------------------//
+    //-- HIGHLIGHT MATCHING TAG --//
+    //"highlight-matching-tag.enabled": true,
+    /*"highlight-matching-tag.styles": {
+        "opening": {
+            "left": {
+                "underline": "yellow"
+            },
+            "right": {
+                "underline": "yellow"
+            }
+        }
+    },*/
     //-- HTML --//
     "html.format.indentHandlebars": true,
     "html-css-class-completion.enableEmmetSupport": true,
     //------------------------- I -------------------------//
     //------------------------- J -------------------------//
     //-- JAVA --//
-    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_131",
+    //"java.home": "C:\\Program Files\\Java\\jdk1.8.0_131",
     //-- JAVASCRIPT --//
     "javascript.preferences.quoteStyle": "single",
     //------------------------- K -------------------------//
@@ -100,6 +123,8 @@
     "php.validate.executablePath": "E:\\xampp\\php\\php.exe",
     "php.executablePath": "E:\\xampp\\php\\php.exe",
     //-- PRETTIER --//
+    "prettier.jsxBracketSameLine": false,
+    "prettier.tabWidth": 4,
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
     //-- PYTHON --//
@@ -114,9 +139,13 @@
     "quokka.suppressExpirationNotifications": true,
     //------------------------- R -------------------------//
     //-- RUBY --//
-    "ruby.codeCompletion": "rcodetools",
+    "[ruby]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveTimeout": 1500
+    },
     "ruby.format": "rubocop",
-    "ruby.interpreter.commandPath": "../../../../../mnt/../treylanz/.rvm/rubies/ruby-2.5.0/bin/ruby",
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.interpreter.commandPath": "/home/treylanz/.rvm/rubies/ruby-2.5.0/bin/ruby", //"/mnt/home/treylanz/.rvm/rubies/ruby-2.5.0/bin/ruby",
     "ruby.useBundler": true,
     "ruby.useLanguageServer": true,
     //-- RUST --//
@@ -125,23 +154,40 @@
     "rust.all_features": true,
     //------------------------- S -------------------------//
     //-- SCSS --//
-    "scss.showErrors": true,
+    //"scss.showErrors": true,
     //-- SOLARGRAPH (RUBY) --//
-    "solargraph.formatting": true,
+    //"solargraph.formatting": true,
+    //-- SUBTLE MATCH BRACKETS --//
+    //"subtleBrackets.disableNative": true,
+    //"subtleBrackets.parse": true,
+    /*"subtleBrackets.pairs": [
+        {
+            "open": "(",
+            "close": ")"
+        },
+        {
+            "open": "[",
+            "close": "]"
+        },
+        {
+            "open": "{",
+            "close": "}"
+        }
+    ],*/
     //------------------------- T -------------------------//
     //-- TSLINT --//
-    "tslint.enable": false,
+    //"tslint.enable": false,
     //-- TYPESCRIPT --//
-    "typescript.preferences.quoteStyle": "single",
+    //"typescript.preferences.quoteStyle": "single",
     //------------------------- U -------------------------//
     //------------------------- V -------------------------//
     //------------------------- W -------------------------//
     //-- WINDOW --//
-    "window.zoomLevel": -1,
+    "window.zoomLevel": -0.5,
     //-- WORKBENCH --//
     "workbench.editor.showTabs": true,
     "workbench.editor.openPositioning": "last",
-    "workbench.list.horizontalScrolling": true,
+    //"workbench.list.horizontalScrolling": true,
     "workbench.tree.indent": 8,
     "workbench.settings.editor": "json",
     "workbench.editor.highlightModifiedTabs": true,
@@ -159,6 +205,7 @@
             "activityBarBadge.background": "#536888b9"
         },
     },
+    "vsicons.presets.angular": true,
     //------------------------- X -------------------------//
     //------------------------- Y -------------------------//
     //------------------------- Z -------------------------//
