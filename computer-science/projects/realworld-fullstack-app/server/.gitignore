@@ -63,3 +63,7 @@ typings/
 
 # next.js build output
 .next
+
+# github directory
+github/clones/
+github/forks/
